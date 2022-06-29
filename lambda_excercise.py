@@ -1,6 +1,7 @@
 #Lambda Excercise 1
 
 #Consider the List
+from functools import reduce 
 
 prog_lang = [('Python', 3.8),
     ('Java', 13),
@@ -40,3 +41,9 @@ print( list(map(lambda ele: (ele[0].lower(), len(ele[0])), prog_lang)) )
 
 
 print((','.join(map(lambda x : x[0],prog_lang)),','.join(map(lambda x: str(x[1]), prog_lang))))
+
+method = reduce(lambda x,y:(f'{x[0]}, {y[0]}',f'{x[1]}, {y[1]}',prog_lang))
+print(method)
+
+
+

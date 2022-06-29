@@ -2,7 +2,6 @@
 
 #Problem 1
 #Create a generator, primes_gen that generates prime numbers starting from 2.
-"""
 def is_prime(n):
     i = 2
     if n == 2:
@@ -23,7 +22,6 @@ def primes_gen():
 gen = primes_gen()
 for _ in range(10):
     print(next(gen), end=' ')
-"""
 
 
 
